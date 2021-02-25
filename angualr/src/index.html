@@ -1,0 +1,149 @@
+<!doctype html>
+<!--
+Theme: Metronic - The Ultimate Bootstrap Admin Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: You must have a valid license purchased only from https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469/ in order to legally use the theme for your project.
+-->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Metronic | Angular Demo</title>
+	<base href="/">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="./assets/media/logos/favicon.ico">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700"
+		rel="stylesheet"> -->
+
+     
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
+  <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+  <link href="assets/plugins/global/plugins.bundle.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+  <link href="assets/plugins/custom/prismjs/prismjs.bundle.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+  <link href="assets/sass/style.bundle.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+  <link rel="shortcut icon" href="assets/media/logos/favicon.ico"/>
+
+
+
+
+  <!-- customized one -->
+  <script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
+      <script>
+      var KTAppSettings = {
+          "breakpoints": {
+              "sm": 576,
+              "md": 768,
+              "lg": 992,
+              "xl": 1200,
+              "xxl": 1200
+          },
+          "colors": {
+              "theme": {
+                  "base": {
+                      "white": "#ffffff",
+                      "primary": "#6993FF",
+                      "secondary": "#E5EAEE",
+                      "success": "#1BC5BD",
+                      "info": "#8950FC",
+                      "warning": "#FFA800",
+                      "danger": "#F64E60",
+                      "light": "#F3F6F9",
+                      "dark": "#212121"
+                  },
+                  "light": {
+                      "white": "#ffffff",
+                      "primary": "#E1E9FF",
+                      "secondary": "#ECF0F3",
+                      "success": "#C9F7F5",
+                      "info": "#EEE5FF",
+                      "warning": "#FFF4DE",
+                      "danger": "#FFE2E5",
+                      "light": "#F3F6F9",
+                      "dark": "#D6D6E0"
+                  },
+                  "inverse": {
+                      "white": "#ffffff",
+                      "primary": "#ffffff",
+                      "secondary": "#212121",
+                      "success": "#ffffff",
+                      "info": "#ffffff",
+                      "warning": "#ffffff",
+                      "danger": "#ffffff",
+                      "light": "#464E5F",
+                      "dark": "#ffffff"
+                  }
+              },
+              "gray": {
+                  "gray-100": "#F3F6F9",
+                  "gray-200": "#ECF0F3",
+                  "gray-300": "#E5EAEE",
+                  "gray-400": "#D6D6E0",
+                  "gray-500": "#B5B5C3",
+                  "gray-600": "#80808F",
+                  "gray-700": "#464E5F",
+                  "gray-800": "#1B283F",
+                  "gray-900": "#212121"
+              }
+          },
+          "font-family": "Poppins"
+      };
+  </script>
+  <script src="assets/plugins/global/plugins.bundle.js?v=7.0.6"></script>
+  <script src="assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.6"></script>
+  <script src="assets/js/scripts.bundle.js?v=7.0.6"></script>
+  <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.0.6"></script>
+  <script src="assets/js/pages/widgets.js?v=7.0.6"></script>
+
+
+  <script src="assets/js/components/util.js" type="application/javascript"></script>
+  <script src="assets/js/components/header.js" type="application/javascript"></script>
+  <script src="assets/js/components/menu.js" type="application/javascript"></script>
+  <script src="assets/js/components/offcanvas.js" type="application/javascript"></script>
+  <script src="assets/js/components/scrolltop.js" type="application/javascript"></script>
+  <script src="assets/js/components/toggle.js" type="application/javascript"></script>
+  <script src="assets/js/components/dialog.js" type="application/javascript"></script>
+  <script src="assets/js/components/wizard.js" type="application/javascript"></script>
+
+  <script src="assets/js/pages/custom/login/login-4.js?v=7.0.6"></script>
+
+
+     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+      <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+          OneSignal.init({
+            appId: "67421c7b-21ab-43b5-9599-b16b4156b6d6",
+            allowLocalhostAsSecureOrigin: true,
+            notifyButton: {
+              enable: false
+            },
+            // subdomainName: "gpff",
+          });
+          OneSignal.push(function () {
+            console.log('Register For Push');
+            OneSignal.push(["registerForPushNotifications"])
+          });
+          OneSignal.getUserId(function(userId) {
+              console.log("OneSignal User ID:", userId);
+              localStorage.setItem("notifyid",userId);
+             // $('#push_web_id').val(userId);
+              // (Output) OneSignal User ID: 270a35cd-4dda-4b3f-b04e-41d7463a2316    
+            });
+              OneSignal.on('notificationDisplay', function(event) {
+              console.warn('OneSignal notification displayed:', event);
+            });
+        });
+      </script>
+
+
+</head>
+
+<body kt-root id="kt_body"></body>
+
+</html>
